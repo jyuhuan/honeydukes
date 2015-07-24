@@ -22,6 +22,10 @@ publishTo := {
 
 publishArtifact in Test := false
 
+resolvers += Resolver.sonatypeRepo("snapshots")
+
+libraryDependencies += "me.yuhuan" %% "yalg" % "0.0.0-SNAPSHOT"
+
 pomExtra :=
   <url>https://github.com/jyuhuan/yutil</url>
     <licenses>
@@ -42,4 +46,5 @@ pomExtra :=
         <url>http://yuhuan.me/</url>
       </developer>
     </developers>
+
 
