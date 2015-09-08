@@ -2,6 +2,8 @@ package me.yuhuan.util
 
 import me.yuhuan.algebra.MultiplicativeMonoid
 
+import scala.collection._
+
 
 /**
  * @author Yuhuan Jiang (jyuhuan@gmail.com).
@@ -17,6 +19,21 @@ object Sweeteners {
         index += 1
         (index, iter.next())
       }
+    }
+
+    def split(p: X ⇒ Boolean): Iterable[Iterable[X]] = {
+      val result = mutable.ArrayBuffer[Iterable[X]]()
+
+      var cur = mutable.ArrayBuffer[X]()
+
+      for (x ← xs) {
+        if (p(x)) {
+          result += cur
+          cur = mutable.ArrayBuffer[X]()
+        }
+        else cur += x
+      }
+      result
     }
 
 
