@@ -16,6 +16,19 @@ object StringUtils {
 
   def wrapWithXmlTag(s: String, tagName: String) = s"<$tagName>$s</$tagName>"
 
+  /**
+   * Converts all consecutive whitespaces into one simple spaces.
+   * Eg:
+   *
+   *   Original: "a st   with a  \t lot of \n\t white space . "
+   *   Regularized: "a st with a lot of white space . "
+   *
+   * @param text The string to be regularized.
+   * @return Tree parts:
+   * - A string with all consecutive whitespaces combined into single spaces (i.e., the regularized string).
+   * - A string with all whitespaces converted into single spaces (same length as the input string).
+   * - A mapping from positions in the regularized string to the original string.
+   */
   def regularizeText(text: String): (String, String, Seq[Int]) = {
 
     var i = 0

@@ -4,11 +4,15 @@ package me.yuhuan.util
  * @author Yuhuan Jiang (jyuhuan@gmail.com).
  */
 object Regex {
-  val whitespaces = """[ \t]+"""
-  val whitespace = """\s"""
-  val leftParenthesis = """\("""
-  val rightParenthesis = """\)"""
-  val allBrackets = """(\()|(\))"""
+  val Whitespaces = """\s+"""
+  val Whitespace = """\s"""
+  val SimpleSpace = " "
+  val NewLine = """\n"""
 
-  val betweenTags = """>[^<>]+</"""
+  @deprecated val whitespaces = """[ \t]+"""
+  @deprecated val whitespace = """\s"""
+  @deprecated val leftParenthesis = """\("""
+  @deprecated val rightParenthesis = """\)"""
+  @deprecated val allBrackets = """(\()|(\))"""
+  @deprecated val betweenTags = """>[^<>]+</"""
 }
