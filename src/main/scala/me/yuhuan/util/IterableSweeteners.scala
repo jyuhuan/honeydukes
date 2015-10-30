@@ -12,5 +12,6 @@ object IterableSweeteners {
     def indexed = IterableUtils.indexed(xs)
     def split(p: X ⇒ Boolean) = IterableUtils.split(xs, p)
     def prod(implicit m: MultiplicativeMonoid[X]) = IterableUtils.prod(xs)(m)
+    def cartesianProduct[Y](that: Iterable[Y]): Iterable[(X, Y)] = IterableUtils.cartesianProduct(xs, that)
   }
 }
