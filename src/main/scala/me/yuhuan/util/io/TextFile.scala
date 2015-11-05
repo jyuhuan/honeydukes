@@ -4,6 +4,8 @@ import java.io._
 import java.nio.charset._
 import java.nio.file._
 
+import me.yuhuan.util._
+
 object TextFile {
   /**
    * Reads a file into a string.
@@ -45,6 +47,24 @@ object TextFile {
         else throw new NoSuchElementException
       }
     }
+  }
+
+  def readLines(is: InputStream): Iterable[String] = new Iterable[String] {
+    def iterator: Iterator[String] = new Iterator[String] {
+      val reader = new BufferedReader(new InputStreamReader(is))
+      var line = reader.readLine()
+
+      def hasNext: Boolean = line != null
+
+      def next(): String = {
+        line = reader.readLine()
+        line
+      }
+    }
+  }
+
+  def readAll(is: InputStream): String = {
+    readLines(is).mkString(StandardStrings.NewLine)
   }
 
   def writeLines(fn: String)(s: TraversableOnce[String]) = {
