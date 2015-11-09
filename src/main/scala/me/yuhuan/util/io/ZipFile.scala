@@ -1,5 +1,6 @@
 package me.yuhuan.util.io
 
+import java.io.InputStream
 import java.util.Scanner
 import java.util.zip.ZipInputStream
 
@@ -11,10 +12,9 @@ import scala.collection.mutable
   * @author Yuhuan Jiang (jyuhuan@gmail.com).
   */
 object ZipFile {
-  def read(pathToZip: String): mutable.HashMap[String, String] = {
+  def read(is: InputStream): mutable.HashMap[String, String] = {
     val docs = scala.collection.mutable.HashMap[String, String]()
-    val inputStream = this.getClass.getResourceAsStream(pathToZip)
-    val zipInputStream = new ZipInputStream(inputStream)
+    val zipInputStream = new ZipInputStream(is)
     var curZipEntry = zipInputStream.getNextEntry
     while (curZipEntry != null) {
       if (!curZipEntry.isDirectory) {
