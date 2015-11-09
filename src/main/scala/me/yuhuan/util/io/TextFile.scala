@@ -6,6 +6,10 @@ import java.nio.file._
 
 import me.yuhuan.util._
 
+/**
+  * @author Tongfei Chen (ctongfei@gmail.com)
+  * @author Yuhuan Jiang (jyuhuan@gmail.com)
+  */
 object TextFile {
   /**
    * Reads a file into a string.
@@ -27,9 +31,14 @@ object TextFile {
    * @param cs Charset (default value UTF-8)
    * @return A non-strict list of lines.
    */
-  def readLines(fn: String, cs: Charset = StandardCharsets.UTF_8): Iterable[String] = new Iterable[String] {
-    def iterator = new Iterator[String] {
-      val br = Files.newBufferedReader(Paths.get(fn), cs)
+  def readLinesFromFileName(fn: String, cs: Charset = StandardCharsets.UTF_8): Iterable[String] = {
+    readLines(Files.newInputStream(Paths.get(fn)), cs)
+  }
+
+  def readLines(is: InputStream, cs: Charset = StandardCharsets.UTF_8): Iterable[String] = new Iterable[String] {
+    def iterator: Iterator[String] = new Iterator[String] {
+      val br = new BufferedReader(new InputStreamReader(is, cs))
+
       var nextLine: String = null
       def hasNext = {
         if (nextLine != null) true
@@ -45,20 +54,6 @@ object TextFile {
           line
         }
         else throw new NoSuchElementException
-      }
-    }
-  }
-
-  def readLines(is: InputStream): Iterable[String] = new Iterable[String] {
-    def iterator: Iterator[String] = new Iterator[String] {
-      val reader = new BufferedReader(new InputStreamReader(is))
-      var line = reader.readLine()
-
-      def hasNext: Boolean = line != null
-
-      def next(): String = {
-        line = reader.readLine()
-        line
       }
     }
   }
