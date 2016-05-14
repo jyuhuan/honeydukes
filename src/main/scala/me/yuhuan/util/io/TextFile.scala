@@ -5,6 +5,7 @@ import java.nio.charset._
 import java.nio.file._
 
 import me.yuhuan.util._
+import me.yuhuan.util.value.StandardStrings
 
 /**
   * @author Tongfei Chen (ctongfei@gmail.com)
@@ -13,6 +14,7 @@ import me.yuhuan.util._
 object TextFile {
   /**
    * Reads a file into a string.
+ *
    * @param fn File name
    * @param cs Charset (default value UTF-8)
    * @return
@@ -27,6 +29,7 @@ object TextFile {
 
   /**
    * Reads a file, line by line, lazily.
+ *
    * @param fn File name
    * @param cs Charset (default value UTF-8)
    * @return A non-strict list of lines.

@@ -1,5 +1,7 @@
 package me.yuhuan.util
 
+import me.yuhuan.util.value.Regex
+
 import scala.collection._
 
 /**

@@ -1,4 +1,4 @@
-package me.yuhuan.util
+package me.yuhuan.util.value
 
 /**
  * @author Yuhuan Jiang (jyuhuan@gmail.com).

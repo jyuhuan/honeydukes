@@ -1,4 +1,4 @@
-package me.yuhuan.util
+package me.yuhuan.util.value
 
 /**
  * Created by Yuhuan Jiang (jyuhuan@gmail.com) on 10/6/15.

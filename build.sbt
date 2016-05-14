@@ -1,6 +1,6 @@
 name := "yutil"
 
-version := "0.0.7-SNAPSHOT"
+version := "0.0.12-SNAPSHOT"
 
 organization := "me.yuhuan"
 
