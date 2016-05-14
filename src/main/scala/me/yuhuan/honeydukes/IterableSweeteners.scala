@@ -1,6 +1,6 @@
-package me.yuhuan.util
+package me.yuhuan.honeydukes
 
-import me.yuhuan.algebra.MultiplicativeMonoid
+//import me.yuhuan.algebra.MultiplicativeMonoid
 
 import scala.collection.Iterable
 
@@ -11,7 +11,7 @@ object IterableSweeteners {
   implicit class IterableIsSweet[X](val xs: Iterable[X]) extends AnyVal {
     def indexed = IterableUtils.indexed(xs)
     def split(p: X ⇒ Boolean) = IterableUtils.split(xs, p)
-    def prod(implicit m: MultiplicativeMonoid[X]) = IterableUtils.prod(xs)(m)
+    //def prod(implicit m: MultiplicativeMonoid[X]) = IterableUtils.prod(xs)(m)
     def cartesianProduct[Y](that: Iterable[Y]): Iterable[(X, Y)] = IterableUtils.cartesianProduct(xs, that)
   }
 }

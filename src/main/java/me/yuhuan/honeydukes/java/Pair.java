@@ -1,4 +1,4 @@
-package me.yuhuan.util.java;
+package me.yuhuan.honeydukes.java;
 
 /**
  * Created by Yuhuan Jiang (jyuhuan@gmail.com) on 11/2/15.

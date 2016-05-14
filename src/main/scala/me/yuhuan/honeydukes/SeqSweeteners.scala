@@ -1,4 +1,4 @@
-package me.yuhuan.util
+package me.yuhuan.honeydukes
 
 /**
  * Created by Yuhuan Jiang (jyuhuan@gmail.com) on 10/28/15.

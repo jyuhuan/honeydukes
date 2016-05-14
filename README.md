@@ -1,2 +1,2 @@
-# YUtil
-A very *sweet* utility library for Scala.
+# Honeydukes
+A very sweet utility library for Scala.

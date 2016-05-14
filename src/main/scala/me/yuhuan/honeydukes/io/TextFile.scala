@@ -1,11 +1,11 @@
-package me.yuhuan.util.io
+package me.yuhuan.honeydukes.io
 
 import java.io._
 import java.nio.charset._
 import java.nio.file._
 
-import me.yuhuan.util._
-import me.yuhuan.util.value.StandardStrings
+import me.yuhuan.honeydukes._
+import me.yuhuan.honeydukes.value.StandardStrings
 
 /**
   * @author Tongfei Chen (ctongfei@gmail.com)

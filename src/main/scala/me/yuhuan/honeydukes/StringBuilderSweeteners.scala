@@ -1,4 +1,4 @@
-package me.yuhuan.util
+package me.yuhuan.honeydukes
 
 /**
   * @author Yuhuan Jiang (jyuhuan@gmail.com).
@@ -25,7 +25,7 @@ object StringBuilderSweeteners {
 }
 
 private object StringBuilderSweetenerTest extends App {
-  import me.yuhuan.util.StringBuilderSweeteners._
+  import me.yuhuan.honeydukes.StringBuilderSweeteners._
   val sb = new StringBuilder
   sb += "a"
   sb += 2.9

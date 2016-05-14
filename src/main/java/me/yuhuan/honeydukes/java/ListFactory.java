@@ -1,6 +1,5 @@
-package me.yuhuan.util.java;
+package me.yuhuan.honeydukes.java;
 
-import java.util.List;
 import java.util.function.Function;
 
 /**

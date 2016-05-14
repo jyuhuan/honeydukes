@@ -1,4 +1,4 @@
-package me.yuhuan.util.net
+package me.yuhuan.honeydukes.net
 
 import java.io._
 import java.net.Socket

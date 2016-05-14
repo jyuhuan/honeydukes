@@ -1,6 +1,6 @@
-name := "yutil"
+name := "honeydukes"
 
-version := "0.0.12-SNAPSHOT"
+version := "0.0.13-SNAPSHOT"
 
 organization := "me.yuhuan"
 
@@ -22,12 +22,9 @@ publishTo := {
 
 publishArtifact in Test := false
 
-resolvers += Resolver.sonatypeRepo("snapshots")
-
-libraryDependencies += "me.yuhuan" %% "yalg" % "0.0.0-SNAPSHOT"
 
 pomExtra :=
-  <url>https://github.com/jyuhuan/yutil</url>
+  <url>https://github.com/jyuhuan/honeydukes</url>
     <licenses>
       <license>
         <name>MIT</name>
@@ -36,8 +33,8 @@ pomExtra :=
       </license>
     </licenses>
     <scm>
-      <url>git@github.com:jyuhuan/yutil.git</url>
-      <connection>scm:git:git@github.com:jyuhuan/yutil.git</connection>
+      <url>git@github.com:jyuhuan/honeydukes.git</url>
+      <connection>scm:git:git@github.com:jyuhuan/honeydukes.git</connection>
     </scm>
     <developers>
       <developer>

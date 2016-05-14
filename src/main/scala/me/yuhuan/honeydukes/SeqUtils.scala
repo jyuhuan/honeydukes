@@ -1,4 +1,4 @@
-package me.yuhuan.util
+package me.yuhuan.honeydukes
 
 import scala.collection._
 

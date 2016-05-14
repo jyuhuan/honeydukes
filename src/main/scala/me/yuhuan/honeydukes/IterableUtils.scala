@@ -1,6 +1,6 @@
-package me.yuhuan.util
+package me.yuhuan.honeydukes
 
-import me.yuhuan.algebra.MultiplicativeMonoid
+//import me.yuhuan.algebra.MultiplicativeMonoid
 
 import scala.collection.{mutable, Iterable, Iterator}
 
@@ -36,7 +36,7 @@ object IterableUtils {
     result
   }
 
-  def prod[X](xs: Iterable[X])(implicit m: MultiplicativeMonoid[X]) = xs.foldLeft(m.one)((a, b) ⇒ m.mul(a, b))
+  //def prod[X](xs: Iterable[X])(implicit m: MultiplicativeMonoid[X]) = xs.foldLeft(m.one)((a, b) ⇒ m.mul(a, b))
 
   def cartesianProduct[X, Y](xs: Iterable[X], ys: Iterable[Y]): Iterable[(X, Y)] = {
     if (xs.isEmpty || ys.isEmpty) Iterable.empty[(X, Y)]

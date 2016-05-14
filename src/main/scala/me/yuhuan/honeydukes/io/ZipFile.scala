@@ -1,10 +1,10 @@
-package me.yuhuan.util.io
+package me.yuhuan.honeydukes.io
 
 import java.io.InputStream
 import java.util.Scanner
 import java.util.zip.ZipInputStream
 
-import me.yuhuan.util.value.StandardStrings
+import me.yuhuan.honeydukes.value.StandardStrings
 
 import scala.collection.mutable
 

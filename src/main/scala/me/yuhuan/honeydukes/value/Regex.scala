@@ -1,4 +1,4 @@
-package me.yuhuan.util.value
+package me.yuhuan.honeydukes.value
 
 /**
  * @author Yuhuan Jiang (jyuhuan@gmail.com).

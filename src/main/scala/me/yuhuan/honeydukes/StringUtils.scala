@@ -1,6 +1,6 @@
-package me.yuhuan.util
+package me.yuhuan.honeydukes
 
-import me.yuhuan.util.value.Regex
+import me.yuhuan.honeydukes.value.Regex
 
 import scala.collection._
 

@@ -1,6 +1,4 @@
-package me.yuhuan.util.java;
-
-import java.util.*;
+package me.yuhuan.honeydukes.java;
 
 /**
  * Created by Yuhuan Jiang (jyuhuan@gmail.com) on 11/3/15.

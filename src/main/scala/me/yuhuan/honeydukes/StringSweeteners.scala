@@ -1,4 +1,4 @@
-package me.yuhuan.util
+package me.yuhuan.honeydukes
 
 /**
  * @author Yuhuan Jiang (jyuhuan@gmail.com).
