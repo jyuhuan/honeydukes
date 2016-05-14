@@ -18,8 +18,11 @@ object Directory {
     new java.io.File(pathToDirectory).listFiles().filter(f ⇒ f.isDirectory)
   }
 
-  def createIfNotExist(name: String) = {
-    val dir = new File(name)
+  def createIfNotExist(pathToDirectory: String) = {
+    val dir = new File(pathToDirectory)
     if (!dir.exists()) dir.mkdir()
   }
+
+  def exists(pathToDirectory: String): Boolean = new File(pathToDirectory) exists
+
 }
